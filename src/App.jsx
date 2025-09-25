@@ -1,10 +1,25 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+
+import { Home } from "./pages/Home"
+import { Planos } from "./pages/Planos"
+import { Unidades } from "./pages/Unidades"
+import { Contato } from "./pages/Contato"
+
 const App = () => {
+
   return (
-    <main className="min-h-dvh grid place-items-center bg-slate-50">
-      <h1 className="text-3xl font-bold text-slate-800">
-        Goldfit Academia
-      </h1>
-    </main>
-  );
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/planos' element={<Planos />} />
+          <Route path='/unidades' element={<Unidades />} />
+          <Route path='/contato' element={<Contato />} />
+        </Routes>
+      </BrowserRouter>
+
+    </>
+  )
 }
+
 export default App
