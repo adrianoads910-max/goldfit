@@ -4,7 +4,7 @@ import { Navbar } from "../../components/Navbar"
 const PLANS = [
     {
         title: 'FIT RECORRENTE',
-        bgColor: 'bg-zinc-600',
+        bgColor: '',
         items: [
             "✔ Avaliação física trimestral",
             "✔ Treino personalizado",
@@ -53,6 +53,7 @@ export const Planos = () => {
         <main className=" w-full m-auto min-h-screen bg-slate-950">
             <header>
                 <Navbar />
+                <h2 className="text-5xl font-semibold text-amber-50 p-6">Conheça nossos Planos</h2>
             </header>
 
             <div className="container grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-2">
@@ -66,7 +67,7 @@ export const Planos = () => {
                             ))}
                         </ul>
 
-                        <p>{item.price} <strong>{item.realPrice}</strong></p>
+                        <p className="p-2">{item.price} <strong>{item.realPrice}</strong></p>
 
                         <Button>Assinar {item.title}</Button>
                     </section>
