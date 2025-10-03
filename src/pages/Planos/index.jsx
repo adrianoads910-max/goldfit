@@ -50,16 +50,16 @@ const PLANS = [
 
 export const Planos = () => {
     return (
-        <main className=" w-full m-auto min-h-screen bg-slate-950">
+        <main className=" w-full m-auto min-h-screen bg-slate-900">
             <header>
                 <Navbar />
-                <h2 className="text-5xl font-semibold text-amber-50 p-6">Conheça nossos Planos</h2>
+                <h1 className="text-5xl text-center font-semibold text-brand-yellow p-6">Conheça nossos Planos</h1>
             </header>
 
-            <div className="container grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-2">
+            <div className="container justify-self-center grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-2">
                 {PLANS.map((item) => (
-                    <section className={`text-neutral-50 ${item.bgColor}`}>
-                        <h3>{item.title}</h3>
+                    <section className={`text-neutral-50 border p-4 rounded-tr-2xl rounded-bl-2xl space-y-3 border-neutral-50 ${item.bgColor}`}>
+                        <h3 className="text-3xl font-semibold text-center">{item.title}</h3>
 
                         <ul>
                             {item.items.map(feature => (
@@ -67,7 +67,11 @@ export const Planos = () => {
                             ))}
                         </ul>
 
-                        <p className="p-2">{item.price} <strong>{item.realPrice}</strong></p>
+                        <article className="text-center">
+
+                            <p className="line-through">{item.price}</p>
+                            <strong className="text-4xl font-semibold">{item.realPrice}</strong>
+                        </article>
 
                         <Button>Assinar {item.title}</Button>
                     </section>

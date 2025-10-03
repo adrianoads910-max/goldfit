@@ -2,11 +2,17 @@ import { Link } from "react-router-dom"
 
 export const Navbar = () => {
     return (
-        <nav className=" z-50 flex justify-center items-center w-full gap-4 p-4 text-amber-50 text-2xl">
-            <Link to="/">Home</Link>
-            <Link to="/planos">Planos</Link>
-            <Link to="/unidades">Unidades</Link>
-            <Link to="/contato">Contato</Link>
-        </nav>
+        <header className="flex">
+            <picture className="max-w-[64px]">
+                <img src="./logo.jpeg" alt="logo goldfit" />
+            </picture>
+            <nav className="z-50  flex justify-center items-center w-full gap-4 p-4 bg-brand-purple text-2xl">
+                <Link className=" text-brand-yellow font-bold hover:underline cursor-pointer" to="/">Home</Link>
+                <Link className=" text-brand-yellow font-bold hover:underline cursor-pointer" to="/planos">Planos</Link>
+                <Link className=" text-brand-yellow font-bold hover:underline cursor-pointer" to="/unidades">Unidades</Link>
+                <Link className="text-brand-yellow font-bold hover:underline cursor-pointer" to="/contato">Contato</Link>
+            </nav>
+
+        </header>
     )
 }

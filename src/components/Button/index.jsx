@@ -1,6 +1,6 @@
 export const Button = ({ variant = 'primary', children, ...props }) => {
     const BUTTON_VARIANTS = {
-        primary: 'text-amber-50 hover:text-slate-900 hover:bg-amber-400 text-lg font-medium border-2 rounded-full p-4',
+        primary: 'text-amber-50 hover:text-slate-900 hover:bg-amber-400 text-lg font-medium border-2 rounded-full w-full p-4',
         secondary: '',
     }
 

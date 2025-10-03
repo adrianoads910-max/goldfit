@@ -8,16 +8,16 @@ export const Home = () => {
 
                 <Navbar />
 
-                <section className="flex justify-end items-end w-full h-[80%] p-4">
-                    <Button variant="primary">Conheça nossas unidades</Button>
+                <section className="flex justify-end items-end w-full h-[90%] p-4">
+                    <Button variant="primary">Faça uma aula experimental!</Button>
                 </section>
             </header>
 
             <div className="grid grid-flow-col grid-rows-3 gap-4">
                 <div className="row-span-3">
-                    <article>
-                        <h1 className="font-mono font-bold text-2xl text-left md:text-6xl text-amber-100/100 p-4">Transforme seu corpo, transforme sua vida 💪<span className="inline-block text-amber-100/80">Supere seus limites, conquiste seus resultados 🏋️</span> <span className="inline-block text-amber-100/60">Mais força, mais foco, mais você 🔥</span></h1>
-                    </article>
+                    <picture>
+                        <img src="./transforme.png" alt="plano" className="bg-cover" />
+                    </picture>
                 </div>
 
                 <div className=" row-span-1 w-3.5xl p-1">
