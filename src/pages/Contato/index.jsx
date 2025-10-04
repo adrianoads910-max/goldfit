@@ -2,6 +2,7 @@ import { useState } from "react"
 import { TextField } from "../../components/TextField"
 import { Button } from "../../components/Button"
 import { Navbar } from "../../components/Navbar"
+import { Footer } from "../../components/Footer"
 
 export const Contato = () => {
     const [name, setName] = useState("")
@@ -55,7 +56,9 @@ export const Contato = () => {
                     <Button variant="primary">Enviar</Button>
                 </form>
             </section>
-
+            <footer>
+                <Footer />
+            </footer>
         </main>
 
     )

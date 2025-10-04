@@ -1,5 +1,6 @@
 import { Navbar } from "../../components/Navbar"
 import { Button } from "../../components/Button"
+import { Footer } from "../../components/Footer"
 
 const UNITS = [
     {
@@ -38,7 +39,7 @@ export const UnityPages = () => {
                         </svg>
                     </div>
                     <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
-                    <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-brand-teal hover:bg-brand-purple-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-brand-teal dark:hover:bg-brand-purple-dark dark:focus:ring-blue-800">Search</button>
+                    <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-brand-teal hover:bg-brand-purple-dark focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-brand-purple-alt dark:hover:bg-brand-teal dark:focus:ring-blue-800">Search</button>
                 </div>
             </form>
 
@@ -56,6 +57,9 @@ export const UnityPages = () => {
                     </section>
                 ))}
             </div>
+            <footer>
+                <Footer />
+            </footer>
         </main>
     )
 }
