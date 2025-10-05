@@ -22,15 +22,23 @@ const UNITS = [
 
 export const UnityPages = () => {
     return (
-        <main className="w-full m-auto h-screen bg-slate-900">
+        <main className="w-full m-auto min-h-screen bg-slate-900">
             <header>
                 <Navbar />
 
-                <h2 className="text-5xl font-semibold text-brand-yellow p-6">Nossas Unidades</h2>
+                <h2 className="text-5xl text-center font-semibold text-brand-yellow p-6">Nossas Unidades</h2>
             </header>
+             <div className="flex flex-row justify-center-safe items-center-safe">
+                <div className="basis-1/3">
+                    <h2 className="text-amber-50 text-center text-4xl p-4">Escolha a nossa unidade que mais combina <strong>com você.</strong></h2>
+                </div>
+                <div className=" flex basis-2/3 z-10 h-screen p-4 object-center justify-center-safe">
+                    <img src="./inside.jpg" alt="" className="bg-center p-4 brightness-50 max-w-[900px] max-h-[450px] object-center rounded-3xl"/>
+                </div>
+            </div>
 
 
-            <form class="max-w-5xl mx-auto">
+            <form class="max-w-5xl mx-auto p-4">
                 <label for="default-search" class="mb-2 text-sm font-medium  text-gray-900 sr-only dark:text-white">Search</label>
                 <div class="relative">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-5 pointer-events-none">

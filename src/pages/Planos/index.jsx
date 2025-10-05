@@ -66,7 +66,7 @@ export const Planos = () => {
                 </div>
             </div>
 
-            <div className="container justify-self-center grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-4">
+            <div className="container justify-self-center grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-4 max-h-[450px]">
                 {PLANS.map((item) => (
                     <section className={`text-neutral-50 border p-4 rounded-tr-2xl rounded-bl-2xl space-y-3 border-neutral-50 ${item.bgColor}`}>
                         <h3 className="text-3xl font-semibold text-center">{item.title}</h3>

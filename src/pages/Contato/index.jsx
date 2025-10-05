@@ -35,8 +35,8 @@ export const Contato = () => {
                 </div>
             </article>
             <section>
-                <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto p-4 text-amber-50 text-2xl">
-                    <h2 className="text-3xl text-center font-semibold text-amber-50 p-6">Deixe um comentário!</h2>
+                <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto p-4 text-brand-yellow text-2xl">
+                    <h2 className="text-3xl text-center font-semibold text-brand-yellow p-6">Deixe um comentário!</h2>
                     <TextField label="Nome completo" type="text" name="name" id="name" value={name} onChange={event => setName(event.target.value)} />
 
                     <TextField label="E-mail" type="email" name="email" id="email" value={email} onChange={event => setEmail(event.target.value)} />
