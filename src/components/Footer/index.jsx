@@ -10,56 +10,60 @@ export const Footer = () => {
 
     const handleSubmit = event => {
         event.preventDefault()
-
         const dados = { name, email, mensagem }
         console.log(dados)
     }
-     return (
-        <main className="bg-brand-purple">
-            <footer className="grid grid-flow-col grid-rows-3 gap-4 bg-brand-purple max-h-[550px]">
-                <div className="text-brand-yellow font-bold text-center p-2 row-span-3 justify-start">
-                    <form onSubmit={handleSubmit} className="w-full max-w-lg mx-auto p-4 text-brand-yellow text-2xl">
-                                        <h2 className="text-3xl text-center font-semibold text-brand-yellow p-6">Deixe um comentário!</h2>
-                                        <TextField label="Nome completo" type="text" name="name" id="name" value={name} onChange={event => setName(event.target.value)} />
-                    
-                                        <TextField label="E-mail" type="email" name="email" id="email" value={email} onChange={event => setEmail(event.target.value)} />
-                    
-                    
-                                        <fieldset className="flex flex-col gap-2 mb-2">
-                                            <label htmlFor="message">Mensagem</label>
-                    
-                                            <textarea
-                                                className="border rounded-lg p-2 max-h-96 resize-none"
-                                                id="message"
-                                                value={mensagem}
-                                                onChange={event => setMensagem(event.target.value)}
-                                            />
-                                        </fieldset>
-                    
-                                        <Button variant="primary">Enviar</Button>
-                                    </form>
+
+    return (
+        <footer className="bg-brand-purple text-brand-yellow font-bold">
+            <div className="max-w-screen-xl mx-auto p-8">
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <form onSubmit={handleSubmit} className="w-full text-brand-yellow text-2xl">
+                            <h2 className="text-3xl text-center font-semibold mb-6">Deixe um comentário!</h2>
+                            
+                            <TextField label="Nome completo" type="text" name="name" id="name" value={name} onChange={event => setName(event.target.value)} className=" bg-gray-200 text-gray-900"/>
+                            <TextField label="E-mail" type="email" name="email" id="email" value={email} onChange={event => setEmail(event.target.value)} className=" bg-gray-200 text-gray-900"/>
+                            
+                            <fieldset className="flex flex-col gap-2 mb-4">
+                                <label htmlFor="message">Mensagem</label>
+                                <textarea
+                                    className="border rounded-lg p-2 h-32 resize-none bg-gray-200 text-gray-900" 
+                                    id="message"
+                                    value={mensagem}
+                                    onChange={event => setMensagem(event.target.value)}
+                                />
+                            </fieldset>
+                            
+                            <Button variant="primary">Enviar</Button>
+                        </form>
+                    </div>
+
+                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-8">
+                        <picture className="max-w-[180px]">
+                            <img src="./logo.jpeg" alt="logo goldfit"/>
+                            <p className="p-2">🔍 Indique um ponto</p>
+                        </picture>
+                        
+                        <div className="flex flex-col gap-4">
+                            <p className="text-2xl font-semibold">📩 Email: goldfit@gmail.com</p>
+                            <p className="text-2xl font-semibold">🟢 Whatsapp: (98) 98832-5686</p>
+                        </div>
+                        
+                        <div className="flex flex-col md:flex-row gap-6 ">
+                            <a className="text-3xl hover:underline" href="#">Instagram</a>
+                            <a className="text-3xl hover:underline" href="#">Facebook</a>
+                            <a className="text-3xl hover:underline" href="#">Twitter</a>
+                        </div>
+                    </div>
+
                 </div>
-                <picture className="max-w-[180px] col-span-2 justify-self-center">
-                    <img src="./logo.jpeg" alt="logo goldfit"/>
-                    <p className="text-brand-yellow font-bold p-2 text-center">🔍Indique um ponto</p>
-                </picture>
-                <div className="text-brand-yellow font-bold text-center p-2 col-span-2 row-span-2 py-10">
-                    <div>
-                        <p className="text-2xl text-center font-semibold p-6">📩Email: goldfit@gmail.com</p>
-                        <p className="text-2xl text-center font-semibold p-6">🟢Whatsapp: (98) 98832-5686</p>
-                    </div>
-                    <div>
-                        <a className="text-4xl p-4 hover:underline cursor-pointer"href="site1.html">Instagram</a>
-                        <a className="text-4xl p-4 hover:underline cursor-pointer"href="site1.html">Facebook</a>
-                        <a className="text-4xl p-4 hover:underline cursor-pointer"href="site1.html">Twiter</a>
-                    </div>
+                <div className="text-center border-t border-gray-700 mt-12 pt-6"> 
+                    <p>&copy; 2025 Academia Goldfit. Todos os direitos reservados.</p>
                 </div>
 
-            </footer>
-                <div className="text-brand-yellow font-bold text-center p-4 ">  
-                    <p className="p-4">&copy; 2025 Academia Goldfit. Todos os direitos reservados.</p>
-                </div>
-        </main>    
+            </div>
+        </footer>   
     )
 }
-    
