@@ -9,7 +9,7 @@ const SPACE = [
             alt: "musculaçao"
         },
         trainer: "Musculação"
-        
+
 
     },
     {
@@ -39,8 +39,8 @@ export const Home = () => {
     return (
         <main className=" w-full m-auto min-h-screen bg-slate-950">
 
-                <Navbar />
-            <header className=" z-10 relative bg-center bg-cover bg-[url(./inicial.png)] h-[80vh] sm:h-screen">
+            <Navbar />
+            <header className=" z-10 relative bg-center bg-cover bg-[url(/inicial.png)] h-[80vh] sm:h-screen">
 
                 <section className="absolute bottom-10 right-6 sm:right-20 flex justify-end">
                     <Button variant="primary">Faça uma aula experimental!</Button>
@@ -56,14 +56,14 @@ export const Home = () => {
 
                 <div className=" flex flex-col items-center gap-8">
                     <picture >
-                        <img src="./unidade1.jpeg" alt="unidade Maiobão" className="rounded-3xl p-2 object-cover w-100 h-72 "/>
+                        <img src="./unidade1.jpeg" alt="unidade Maiobão" className="rounded-3xl p-2 object-cover w-100 h-72 " />
                     </picture>
 
                     <section className="mt-4">
                         <Button variant="primary">Conheça nossas unidades</Button>
                     </section>
                     <picture >
-                        <img src="./unidade1.jpeg" alt="unidade Maiobão" className="rounded-3xl p-2 object-cover w-100 h-72 "/>
+                        <img src="./unidade1.jpeg" alt="unidade Maiobão" className="rounded-3xl p-2 object-cover w-100 h-72 " />
                     </picture>
 
                     <section className="mt-4 ">
@@ -79,32 +79,32 @@ export const Home = () => {
                 <picture className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {SPACE.map((item) => (
                         <section key={item.img.src} className="text-neutral-50 p-3">
-                        <div className="relative overflow-hidden group rounded-2xl">
-                            <img
-                                src={item.img.src}
-                                alt={item.img.alt}
-                                className="rounded-2xl w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                            />
-                            <div className="absolute bottom-0 left-0 w-full bg-brand-purple-alt py-2 text-center transition-colors duration-300 group-hover:bg-brand-purple">
-                                <p className="text-brand-yellow text-lg font-extrabold tracking-wide uppercase">
-                                {item.trainer}
-                                </p>
+                            <div className="relative overflow-hidden group rounded-2xl">
+                                <img
+                                    src={item.img.src}
+                                    alt={item.img.alt}
+                                    className="rounded-2xl w-full h-64 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                                />
+                                <div className="absolute bottom-0 left-0 w-full bg-brand-purple-alt py-2 text-center transition-colors duration-300 group-hover:bg-brand-purple">
+                                    <p className="text-brand-yellow text-lg font-extrabold tracking-wide uppercase">
+                                        {item.trainer}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
 
-                        <article className="mt-4 text-center">
-                            <Button>Matricule-se já</Button>
-                        </article>
+                            <article className="mt-4 text-center">
+                                <Button>Matricule-se já</Button>
+                            </article>
                         </section>
                     ))}
                 </picture>
 
 
             </div>
-             <footer>
+            <footer>
                 <Footer />
-             </footer>
+            </footer>
         </main>
 
     )
