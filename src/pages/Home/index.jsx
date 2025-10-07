@@ -5,8 +5,8 @@ import { Footer } from "../../components/Footer"
 const SPACE = [
     {
         img: {
-            src: "./planos.jpg",
-            alt: "unidade cidade operaria"
+            src: "./musculacao.jpg",
+            alt: "musculaçao"
         },
         trainer: "Musculação"
         
@@ -14,22 +14,22 @@ const SPACE = [
     },
     {
         img: {
-            src: "./planos.jpg",
-            alt: "unidade cidade operaria"
+            src: "./natacao.jpg",
+            alt: "natação"
         },
         trainer: "Natação"
     },
     {
         img: {
-            src: "./planos.jpg",
-            alt: "unidade cidade operaria"
+            src: "./fitdance.jpg",
+            alt: "fitdance"
         },
         trainer: "FitDance"
     },
     {
         img: {
-            src: "./planos.jpg",
-            alt: "unidade cidade operaria"
+            src: "./crossfit.jpg",
+            alt: "crossfit"
         },
         trainer: "CrossFit"
     }
@@ -74,7 +74,7 @@ export const Home = () => {
             </div>
             <div>
                 <article>
-                    <h3 className="text-3xl sm:text-4xl md:text-5xl text-center font-semibold text-brand-yellow mb-8">Conheça agora nossos espaços, treinos e aulas coletivas:</h3>
+                    <h3 className="text-5xl sm:text-4xl md:text-5xl text-center font-semibold text-brand-yellow mb-8">Conheça agora nossos espaços, treinos e aulas coletivas:</h3>
                 </article>
                 <picture className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {SPACE.map((item) => (

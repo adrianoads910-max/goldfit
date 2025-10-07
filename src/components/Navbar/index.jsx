@@ -33,10 +33,10 @@ export const Navbar = () => {
                 
                 <div className="hidden md:flex flex-1 justify-center">
                     <ul className="flex flex-row space-x-8">
-                        <li><Link className="text-brand-yellow text-xl font-bold hover:underline" to="/">Home</Link></li>
-                        <li><Link className="text-brand-yellow text-xl font-bold hover:underline" to="/institucional">Institucional</Link></li>
-                        <li><Link className="text-brand-yellow text-xl font-bold hover:underline" to="/planos">Planos</Link></li>
-                        <li><Link className="text-brand-yellow text-xl font-bold hover:underline" to="/unidades">Unidades</Link></li>
+                        <li><Link className="text-brand-yellow text-2xl font-bold hover:underline" to="/">Home</Link></li>
+                        <li><Link className="text-brand-yellow text-2xl font-bold hover:underline" to="/institucional">Institucional</Link></li>
+                        <li><Link className="text-brand-yellow text-2xl font-bold hover:underline" to="/planos">Planos</Link></li>
+                        <li><Link className="text-brand-yellow text-2xl font-bold hover:underline" to="/unidades">Unidades</Link></li>
                     </ul>
                 </div>
                
