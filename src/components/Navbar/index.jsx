@@ -8,7 +8,6 @@ export const Navbar = () => {
     return (
         <header className="bg-brand-purple w-full">
             <nav className="flex items-center justify-between max-w-screen-xl mx-auto p-4 relative">
-                {/* Logo */}
                 <div className="flex-1">
                     <Link to="/">
                         <img src="./logo.jpeg" alt="logo goldfit" className="h-15"/> 
